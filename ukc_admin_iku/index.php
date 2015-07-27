@@ -2,8 +2,6 @@
 
 include 'function.inc.php';
 
-$test = "work";
-
 $mysqli = Connect::conect($_host, $_user, $_password, $_database);
 $parametrs = array();
 if (isLoggedAdmin()) {
@@ -433,6 +431,9 @@ if (isLoggedAdmin()) {
         case "logout":
             Admin::logoutAdmin();
             header("Location: /ukc_admin_iku/");
+            break;
+        case "admins":
+            $parametrs["page"] = "admins.php";
             break;
         case "main":
         default :
