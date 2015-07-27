@@ -1,6 +1,9 @@
 <?php
 
 include 'function.inc.php';
+
+$test = "work";
+
 $mysqli = Connect::conect($_host, $_user, $_password, $_database);
 $parametrs = array();
 if (isLoggedAdmin()) {
