@@ -435,6 +435,9 @@ if (isLoggedAdmin()) {
         case "admins":
             $parametrs["page"] = "admins.php";
             break;
+        case "add_admin":
+            $parametrs["page"] = "add_admin.php";
+            break;
         case "main":
         default :
             $parametrs["page"] = "main.php";
