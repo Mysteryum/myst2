@@ -1,0 +1,1 @@
+<?php $staticText->getStaticText("ustav", $_SESSION["lang"]); ?>

@@ -1,0 +1,231 @@
+html ,body, table, a, div{
+    font-family: arial;
+    font-size: 11pt;    
+}
+html ,body { 
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: white;
+}
+img{
+    border: 0px;
+}
+.login-content{
+    width: 300px;
+    margin: 50px auto;
+    background-color: aquamarine;
+}
+.login_error{
+    text-align: center;
+    color: red;
+}
+.top-menu{
+    width: 1024px;
+    margin: 0 auto;
+    background-color: black;
+    list-style: none;
+    height: 22px;
+    padding: 0px 0px 3px 0px;
+}
+.top-menu li{
+    float: left;
+    height: 20px;
+    padding: 2px 30px 3px;
+
+}
+.top-menu li a, .top-menu li{
+    color: white;
+}
+.top-menu li:hover, .top-menu li:hover a{
+    background-color: aqua;
+    color: black;
+}
+.content-wrap{
+    width: 1024px;
+    margin: 0 auto;
+    min-height: 99%;
+    border: 1px solid black;
+}
+.table-add-comission{
+    width: 800px;
+    margin: 30px auto;
+    border: 1px solid black;
+}
+.table-add-comission input[type=text]{
+    width: 400px;
+}
+.content-table{
+    width: 100%;
+    text-align: center;
+}
+.content-table tr:hover{
+    background-color: aquamarine;
+}
+.content-table td{
+    border: 1px solid grey;
+}
+.document a{
+    text-decoration: none;
+}
+.top-menu li{
+    position: relative;
+}
+
+.sub_menu{
+    position: absolute;    
+    left: 0px;
+    top: 20px;
+    z-index: 100;
+    background-color: beige;    
+    display: none;
+}
+.top-menu li:hover .sub_menu{
+    display: block;
+}
+.sub_menu, .sub_menu li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;    
+}
+.sub_menu li{
+    min-width: 200px;        
+    padding: 2px 10px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+ul.sub_menu li:hover, .top-menu li ul.sub_menu li a:hover, .top-menu li ul.sub_menu li a{
+    background: none;    
+}
+.top-menu li ul.sub_menu li a:hover {
+    text-decoration: none;
+}
+.top-menu li ul.sub_menu li a{
+    color: black;
+}
+.error{
+    color: red;
+}
+.sertificats img{
+    float: left;
+    margin: 5px;
+}
+.sertificats img.del{
+    margin: 5px 0px 0px 0px;
+}
+.main_gallery, .main_gallery li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.main_gallery{
+    width: 100%;
+}
+.main_gallery li{
+    position: relative;
+}
+.main_gallery li:hover{
+    cursor: move;
+}
+.main_gallery li img{
+    max-width: 300px;
+    max-height: 200px;
+}
+.main_gallery li div.del{
+    background: URL('../images/admins/del.gif') 0px 0px no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.main_gallery li div.del a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.main_gallery.surround li, .main_gallery.surround li table, .main_gallery.surround{
+    width: 900px;
+}
+#preview_ajax_photo{
+    position: relative;
+}
+#preview_ajax_photo table td{
+    border-top: 0px;
+}
+#preview_ajax_photo table td img{
+    width: 80px;
+}
+.gallery_item .photo{
+    width: 20%;
+    text-align: center;
+}
+.gallery_item .name, .gallery_item .size, .gallery_item .del, .gallery_item .rash{
+    width: 20%;
+}
+.table_add_wrap{
+    margin: 0px auto;
+}
+.error{
+    color: red;
+}
+.header{
+    height: 60px;
+}
+#button_uload{
+    position: relative;
+    margin-bottom: 10px;
+}
+#button_uload input[type=file]{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+#navbar-nav li.active a{
+    background-color: #E7E7E7;
+}
+.load_wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: URL('../images/load_bg.png') 0px 0px repeat;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+}
+.load_wrap img{
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+.table tr.top th, .table tr.top td{
+    border-top: 0px;
+}
+.container{
+    max-width: none;
+}
+.registration-wrap, .registration-wrap li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.registration-wrap{
+    overflow: auto;
+}
+.registration-wrap li{
+    float: left;
+    margin-right: 15px;
+}
+form[role=form]{
+    width: 1024px;
+    margin: 0px auto;
+}
+.check_editor{
+    height: 400px;
+}

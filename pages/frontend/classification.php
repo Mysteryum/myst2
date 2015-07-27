@@ -1,0 +1,1 @@
+<?php $staticText->getStaticText("klasification", $_SESSION["lang"]) ?>

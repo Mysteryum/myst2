@@ -1,0 +1,53 @@
+Председатель комиссии%*%Array
+V группа%*%Array
+I группа%*%Array
+IV группа%*%Array
+II группа%*%Array
+III группа%*%Array
+International Kennel Union%*%Array
+Главная%*%Array
+Руководство%*%Array
+Комисии%*%Array
+Эксперты%*%Array
+Регистрация%*%Array
+Устав%*%Array
+Положения%*%Array
+Циркуляры%*%Array
+Патент лого%*%Array
+Новости%*%Array
+Члены IKU%*%Array
+Выставки%*%Array
+Расписание%*%Array
+Прошедшие%*%Array
+Породы собак%*%Array
+Классификация%*%Array
+Группы%*%Array
+Форум%*%Array
+Контакты%*%Array
+Должность%*%Array
+Имя%*%Array
+Страна%*%Array
+Адрес%*%Array
+Телефон%*%Array
+E-mail%*%Array
+Комиссия%*%Array
+Член комиссии%*%Array
+Телефона%*%Array
+Сайт%*%Array
+Название%*%Array
+Документы%*%Array
+число%*%Array
+номер%*%Array
+название%*%Array
+Читать описание%*%Array
+Описание%*%Array
+Читать далее%*%Array
+Флаг%*%Array
+Организация%*%Array
+Руководитель%*%Array
+Договор%*%Array
+Партнеры Международного Кинологического Союза (IKU)%*%Array
+Дата%*%Array
+Место проведения%*%Array
+Статус%*%Array
+Название клуба%*%Array

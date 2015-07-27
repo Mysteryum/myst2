@@ -1,0 +1,20 @@
+RewriteEngine on   
+
+RewriteRule ^ukc_admin_iku/?$ ./ukc_admin_iku/index.php [L,QSA]
+RewriteRule ^ukc_admin_iku/([a-z_]+)/?$ ./ukc_admin_iku/index.php?page=$1 [L,QSA]
+
+RewriteRule ^ukc_admin_iku/([a-z_]+)/([0-9]+)?$ ./ukc_admin_iku/index.php?page=$1&id=$2 [L,QSA]
+RewriteRule ^ukc_admin_iku/([a-z_]+)/([a-z_]+)/?$ ./ukc_admin_iku/index.php?page=$1&action=$2 [L,QSA]
+
+RewriteRule ^ukc_admin_iku/([a-z_]+)/([a-z_]+)/([0-9]+)?$ ./ukc_admin_iku/index.php?page=$1&action=$2&id=$3 [L,QSA]
+RewriteRule ^ukc_admin_iku/([a-z_]+)/([a-z_]+)/([0-9]+)/([0-9]+)?$ ./ukc_admin_iku/index.php?page=$1&action=$2&id=$3&id2=$4 [L,QSA]
+
+
+RewriteRule ^/?$ ./index.php?page=main [L]
+RewriteRule ^([a-z_]+)/?$ ./index.php?page=main&lang=$1 [L]
+RewriteRule ^([a-z_]+)\.html/?$ ./index.php?page=$1 [L]
+RewriteRule ^([a-z_]+)/([0-9]+)/?$ ./index.php?page=$1&group=$2 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-z_]+)/([^/]+)/?$ ./index.php?page=$1&symbol=$2 [L]

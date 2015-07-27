@@ -1,0 +1,1 @@
+<?php $staticText->getStaticText("main", $_SESSION["lang"]) ?>

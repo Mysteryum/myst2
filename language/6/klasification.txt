@@ -1,0 +1,24 @@
+<p style="text-align: center;"><span style="font-size: 18pt;"><strong>Класификация на Races</strong></span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Група 1: Овчарски кучета</strong></span></p>
+<p><span style="font-size: 12pt;">1. Овчарски кучета (овчарки и едър рогат добитък)</span></p>
+<p><span style="font-size: 12pt;">2. Безопасност (за опазването и защитата на животните)</span></p>
+<p><span style="font-size: 12pt;">3 .Mandria (указания на животните)</span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Група 2 работни кучета</strong></span></p>
+<p><span style="font-size: 12pt;">1. Guard и отбрана</span></p>
+<p><span style="font-size: 12pt;">2. Ръководство</span></p>
+<p><span style="font-size: 12pt;">3. Освобождаване и работна</span></p>
+<p><span style="font-size: 12pt;">&nbsp;</span><br /><span style="font-size: 12pt;"><strong>Група 3 териери</strong></span></p>
+<p><span style="font-size: 12pt;">1. Търсене в Тана</span></p>
+<p><span style="font-size: 12pt;">2. Sports</span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Група 4 ловни кучета</strong></span></p>
+<p><span style="font-size: 12pt;">1. Хрътки</span></p>
+<p><span style="font-size: 12pt;">2. Лов</span></p>
+<p><span style="font-size: 12pt;">3. Кръвните Hounds и лед</span></p>
+<p><span style="font-size: 12pt;">4. Punta</span></p>
+<p><span style="font-size: 12pt;">5. ретривър</span></p>
+<p><span style="font-size: 12pt;">6. вода</span></p>
+<p><span style="font-size: 12pt;">7. Carry</span></p>
+<p><span style="font-size: 12pt;">8. Други</span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Група 5 кучета Companion</strong></span></p>
+<p><span style="font-size: 12pt;">1. фирма</span></p>
+<p><span style="font-size: 12pt;">2. Друг</span></p>

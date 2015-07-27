@@ -1,0 +1,24 @@
+<p style="text-align: center;"><span style="font-size: 18pt;"><strong>Klassifizierung der V&ouml;lker</strong></span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Gruppe 1: H&uuml;tehunde</strong></span></p>
+<p><span style="font-size: 12pt;">1. Sch&auml;ferhunde (Sch&auml;ferhunde und Treib)</span></p>
+<p><span style="font-size: 12pt;">2. Sicherheit (f&uuml;r die Erhaltung und den Schutz der Tiere)</span></p>
+<p><span style="font-size: 12pt;">3 .Mandria (F&uuml;hrung der Vieh)</span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Gruppe 2 Arbeitshunde</strong></span></p>
+<p><span style="font-size: 12pt;">1. Schutz und Verteidigung</span></p>
+<p><span style="font-size: 12pt;">2. Handbuch</span></p>
+<p><span style="font-size: 12pt;">3. Entlastung und Arbeit</span></p>
+<p><span style="font-size: 12pt;">&nbsp;</span><br /><span style="font-size: 12pt;"><strong>Gruppe 3 Terrier</strong></span></p>
+<p><span style="font-size: 12pt;">1. Suchen Sie in Tana</span></p>
+<p><span style="font-size: 12pt;">2. Sport</span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Gruppe 4 Jagdhunde</strong></span></p>
+<p><span style="font-size: 12pt;">1. Windhundrennen</span></p>
+<p><span style="font-size: 12pt;">2. Jagd</span></p>
+<p><span style="font-size: 12pt;">3. Blut Hounds and Ice</span></p>
+<p><span style="font-size: 12pt;">4. Punta</span></p>
+<p><span style="font-size: 12pt;">5. Retrievers</span></p>
+<p><span style="font-size: 12pt;">6. Wasser</span></p>
+<p><span style="font-size: 12pt;">7. Carry</span></p>
+<p><span style="font-size: 12pt;">8. Sonstige</span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Gruppe 5 Hunden Companion</strong></span></p>
+<p><span style="font-size: 12pt;">1. Unternehmens</span></p>
+<p><span style="font-size: 12pt;">2. Sonstige</span></p>

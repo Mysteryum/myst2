@@ -1,0 +1,1 @@
+<?php $staticText->getStaticText("patent", $_SESSION["lang"]) ?>

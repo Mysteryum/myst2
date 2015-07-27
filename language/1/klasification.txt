@@ -1,0 +1,25 @@
+<p style="text-align: center;"><span style="font-size: 18pt;"><strong>Классификация рас</strong></span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Группа 1: Овчарки</strong></span></p>
+<p><span style="font-size: 12pt;">1. Овчарки (Пастухи и скот)</span></p>
+<p><span style="font-size: 12pt;">2. Безопасность (для сохранения и защиты скота)</span></p>
+<p><span style="font-size: 12pt;">3 .Mandria (руководство животноводства)</span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Группа 2 рабочих собак</strong></span></p>
+<p><span style="font-size: 12pt;">1. Охрана и оборона</span></p>
+<p><span style="font-size: 12pt;">2. Руководство</span></p>
+<p><span style="font-size: 12pt;">3. Рельеф и работа</span></p>
+<p><span style="font-size: 12pt;">&nbsp;</span><br /><span style="font-size: 12pt;"><strong>Группа 3 Терьеры</strong></span></p>
+<p><span style="font-size: 12pt;">1. Поиск в Тане</span></p>
+<p><span style="font-size: 12pt;">2. Спорт</span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Группа 4 охотничьих собак</strong></span></p>
+<p><span style="font-size: 12pt;">1. Борзые</span></p>
+<p><span style="font-size: 12pt;">2. Охота</span></p>
+<p><span style="font-size: 12pt;">3. Кровь Гончие и льда</span></p>
+<p><span style="font-size: 12pt;">4. Пунта</span></p>
+<p><span style="font-size: 12pt;">5. ретриверы</span></p>
+<p><span style="font-size: 12pt;">6. Вода</span></p>
+<p><span style="font-size: 12pt;">7. Перенос</span></p>
+<p><span style="font-size: 12pt;">8. Другое</span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Группа 5 собак Компаньон</strong></span></p>
+<p><span style="font-size: 12pt;">1. Компания</span></p>
+<p><span style="font-size: 12pt;">2. Другое</span></p>
+<p style="text-align: center;"><span style="font-size: 12pt;"><strong>&nbsp;</strong></span></p>

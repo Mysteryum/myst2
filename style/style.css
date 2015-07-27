@@ -1,0 +1,530 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #96b3e2;
+    height: 100%;
+    font-family: tahoma;
+}
+.warp{
+    height: 100%;
+    width: 1024px;
+    margin: 0 auto;
+}
+.header{
+    width: 1024px;
+    height: 150px;
+    background: URL("/images/header.png") 0px 0px no-repeat;
+    position: relative;
+}
+.ukc_logotip{
+    width: 176px;
+    height: 150px;
+    float: left;
+    margin: 0px 0px 0px 40px;
+}
+.iku_logotip{
+    width: 527px;
+    height: 102px;
+    background: URL("/images/iku_logotip.png") right 0px no-repeat;
+    float: right;
+    margin: 40px 20px 0px -5px; 
+
+}
+.top-menu{
+    width: 100%;
+    height: 51px;    
+}
+.top-menu ul{
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    list-style: none;
+}
+.top-menu ul li{
+    background: URL("/images/top_menu.png") 0px 0px repeat-x;
+    float: left;
+    color: #3b5f99;    
+    height: 51px;
+    font-weight: bold;    
+    position: relative;
+    text-align: center;
+}
+.top-menu ul li a{
+    text-decoration: none;
+    color: #3b5f99;
+    display: block;
+    padding-top: 15px;
+}
+.top-menu ul li:hover, .sub-menu-hover:hover li.main-menu{
+    background: URL("/images/menu_bg.png") 2px 0px repeat-x;
+    cursor: pointer;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    color: #021764;
+    height: 47px;
+}
+.sub-menu-hover{
+    position: relative;
+    float: left;
+}
+.main-menu:hover .sub-menu-wrap{
+    display: block;
+}
+.sub-menu-wrap{
+    display: none;
+    position: absolute;
+    width: 232px;    
+    z-index: 100;
+    left: 0px;
+    top: 49px;
+}
+.sb-menu-top{
+    width: 232px;
+    height: 17px;
+    background: URL("/images/sb_menu_top.png") 0px 0px no-repeat;
+}
+.sb-menu-center{
+    width: 232px;
+    background: URL("/images/sb_menu_center.png") 0px 0px repeat;
+}
+.sb-menu-bottom{
+    width: 232px;
+    height: 18px;
+    background: URL("/images/sb_menu_bottom.png") 0px -15px no-repeat;
+}
+ul.sub-menu{    
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+ul.sub-menu li{
+    color: black;
+    float: none;
+    padding: 2px 0px 2px 15px;
+    height: auto;
+    border: 0px;
+    font-weight: normal;
+    font-size: 11pt;
+    background: none;
+    text-align: left;
+    height: auto;
+}
+ul.sub-menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 0px;
+}
+ul.sub-menu li:hover{
+    background: none;
+    padding: 2px 0px 2px 15px;
+    border: 0px;
+    text-decoration: underline;
+    color: #021764;
+    height: auto;
+}
+.content-wrap{
+    width: 1024px;
+    background-color: #395d97;
+    padding-top: 15px;
+    min-height: 77%;
+}
+.mini-news{
+    width: 293px;
+    margin: 0px 0px 0px 10px;
+    float: left;
+    position: relative;
+}
+.mini-news div{
+    width: 269px;
+    padding: 0px 22px 0px 5px;
+}
+.news-top{
+    background: URL("/images/news_top.png") 0px 0px no-repeat;
+    height: 27px;
+}
+.news-center{
+    background: URL("/images/news_center.png") 0px 0px repeat-y;
+    min-height: 190px;
+}
+.news-bottom{
+    background: URL("/images/news_bottom.png") 0px 0px no-repeat;
+    height: 22px;
+}
+.news-href{
+    text-decoration: none;
+}
+.news-href:hover{
+    color: red;
+    text-decoration: underline;
+}
+.news{
+    color: red;
+    font-size: 11pt;
+}
+.news div{
+    width: 100%;
+}
+.news .text{
+    width: 254px;
+    margin-left: 15px;
+}
+.news .list_news{
+    width: 8px;
+    height: 10px;
+    background: URL("/images/main_news.png") 0px 0px no-repeat;
+    float: left;
+    margin: 5px 5px 0px 0px;
+}
+.news:hover .list_news,.news .list_news:hover{
+    background: URL("/images/main_news.png") 0px -10px no-repeat;
+}
+.news .date{
+    color: black;
+    text-align: right;
+    font-size: 10pt;
+    font-style: italic;
+    color: #102e63;
+}
+.news-test{
+    overflow: auto;
+}
+.main-content{
+    height: 78%;
+    width: 706px;
+    margin-left: 308px;    
+}
+.main-content-title{
+    width: 706px;
+    height: 41px;
+    background: URL("/images/page_head.png") 0px 30px no-repeat;
+    text-align: center;
+    color: white;
+    font-size: 14pt;
+    padding-top: 6px;
+}
+.main-content-text{
+    color: white;
+    font-size: 11pt;
+    padding:5px 0px 0px 2px;
+    width: 704px;
+}
+.content{
+    width: 1024px;
+}
+.content-title{
+    width: 706px;
+    height: 41px;
+    background: URL("/images/page_head.png") 0px 30px no-repeat;
+    text-align: center;
+    color: white;
+    font-size: 14pt;
+    padding-top: 6px;
+    margin: 0 auto;
+}
+.content-text{
+    color: white;
+    font-size: 11pt;
+    padding:5px 10px 0px 12px;
+    width: 1002px;
+}
+.content-table{
+    margin: 0px auto;
+    text-align: center;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+.content-table tr{
+    height: 25px;
+}
+.content-table th, .content-table td{
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 2px 6px;
+
+}
+.content-table td a{
+    color: white;
+}
+.content-table th{
+    background: URL("/images/table_head_bg.png") 0px 0px repeat;
+    color: black;
+    font-weight: normal;
+}
+.content-table.commision{
+    width: 980px;
+}
+.content-table.circulars{
+    width: 700px;
+}
+.content-table.members{
+    width: 970px;
+}
+.content-table.members a{
+    color: white;
+}
+.content-table.shedule{
+    width: 970px;
+}
+.content-table.last{
+    width: 800px;
+}
+.content-table.group{
+    width: 900px;
+}
+.content-table.breed{
+    width: 600px;
+}
+.content-table.breed th{
+    width: 50%;
+}
+.registration{
+    width: 300px;
+    margin: 0px 15px 20px 15px;
+}
+.breed_symbol{
+    width: 920px;
+    margin: 0 auto;
+    text-align: center;
+    height: 55px;
+}
+.breed_symbol a, .group_link li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14pt;
+    display: block;
+    float: left;
+    margin-left: 15px;
+}
+.breed_symbol a.active, .group_link li a.active{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.breed_symbol a:hover, .group_link li a:hover{
+    text-decoration: underline;
+}
+.group_link{
+    list-style: none;
+    margin: 0px auto;
+    padding: 0px;
+    width: 690px;
+    height: 55px;
+}
+.group_link li{
+    font-size: 16pt;
+    float: left;
+    margin:0px 15px 0px 15px;
+}
+.news_wrap{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto 20px;
+    color: black;
+    border: 2px solid black;
+    border-bottom: 0px;
+}
+.news_title{
+    width: 100%;
+    height: 20px;
+}
+.news_title div{
+    float: left;
+}
+.news_title div.date{
+    font-size: 10pt;
+    margin: 4px 10px 0px 10px;
+    color: #46689f;
+}
+.news_title div.name{
+    font-size: 11pt;
+    text-decoration: underline;
+}
+.news-content{
+    padding: 5px 10px 0px 10px;
+    height: 93px;
+    overflow: hidden;
+}
+.bottom-news{
+    background-color: white;
+    height: 25px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+.arrow-open{
+    background: URL("/images/news_arrow.png") -33px 0px no-repeat;
+    width: 33px;
+    height: 25px;
+    float: right;
+    cursor: pointer;
+}
+.arrow-open:hover{
+    background: URL("/images/news_arrow.png") -34px -28px no-repeat;
+}
+.label-arrow-news{
+    font-style: italic;
+    color: #0e3c89;
+    float: right;
+    font-size: 9pt;
+    padding-top: 5px;
+    margin-right: 10px;
+}
+.bottom-news.active .arrow-open{
+    background: URL("/images/news_arrow.png") -2px 0px no-repeat;
+}
+.bottom-news.active .arrow-open:hover{
+    background: URL("/images/news_arrow.png") -2px -27px no-repeat;
+}
+.scroller{
+    width: 997px;
+    height: 173px;
+    background-color: #05152f;
+    position: relative;    
+}
+.galery-item{
+    height: 172px;
+    width: 150px;
+    margin-right: 9px;
+}
+.galery{
+    margin-left: 25px;
+}
+.gal{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.gal li{
+    float: left;
+    margin: 0px;
+}
+.galery-next, .galery-prev{
+    background: URL("/images/arrow_right.png") 0px 0px repeat;
+    width: 24px;
+    height: 171px;    
+    cursor: pointer;
+    position: absolute;
+}
+.galery-next{
+    right: 0px;
+}
+.galery-next:hover{
+    background: URL("/images/arrow_right_active.png") 1px 5px repeat;
+}
+.galery-prev{
+    background: URL("/images/arrow_left.png") 0px 0px repeat;
+    left: 0px;
+}
+.galery-prev:hover{
+    background: URL("/images/arrow_left_active.png") 0px -3px repeat;
+}
+.open-modal{
+    color: #ffdb14;
+    cursor: pointer;
+}
+.open-modal:hover{
+    text-decoration: underline;
+}
+.modal_bg{
+    background: URL("/images/modal_bg.png") 0px 0px repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 499;
+}
+.modal-windows-wrap{
+    width: 733px;
+    max-height: 470px;
+    position: fixed;
+    left: 50%;
+    margin-left: -365px;
+    z-index: 500;
+    display: none;
+}
+.modal-windows-title{
+    background: URL("/images/modal_windows_top.png") -2px -1px no-repeat;
+    width: 735px;
+    height: 48px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 16pt;
+    padding-top: 2px;
+}
+.modal-windows-content{
+    background-color: white;
+    margin: 32px 0px 0px 2px; 
+    width: 730px;
+    max-height: 413px;    
+    padding: 15px 0px 10px 0px
+}
+.modal-windows-text{
+    color: black;
+    font-size: 11pt;
+    text-align: justify;
+    width: 710px;
+    max-height: 413px;    
+    overflow: auto;
+    padding: 0px 10px 0px 10px;
+}
+.close-modal{
+    background: URL("/images/modal_windows_button.png") -3px -22px no-repeat;
+    float: right;
+    width: 18px;
+    height: 18px;
+    margin:5px 8px 0px 0px;
+    cursor: pointer;
+}
+.close-modal:hover{
+    background: URL("/images/modal_windows_button.png") -3px -2px no-repeat;
+}
+#expert_wrap{
+    width: 100%;
+    float: left;
+}
+#expert_wrap td{
+    border: 0px;
+    text-align: left;
+}
+#expert_wrap td.photo{
+    width: 160px; 
+}
+#expert_wrap td.photo img{
+    max-width: 150px; 
+    max-height: 150px;
+}
+.lang_head, .lang_head li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.lang_head{
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+.lang_head li{
+    float: left;
+}
+.lang_head li a{
+    text-decoration: none;
+}
+.lang_head li img{
+    width: 30px;
+}
+.wku_logotip{
+    float: left;
+    width: 400px;
+    height: 150px;
+    margin: 0px 0px 0px 40px;
+}
+.wku_logotip .old_logo{
+    width: 130px;
+    float: left;
+    margin-top: -10px;    
+    margin-left: -30px;
+}
+.wku_logotip .new_logo{
+    height: 170px;
+    float: left;
+    margin: -10px -30px 0px 0px;
+    position: relative;
+    z-index: 5;
+}

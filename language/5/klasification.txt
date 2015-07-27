@@ -1,0 +1,24 @@
+<p style="text-align: center;"><span style="font-size: 18pt;"><strong>Classification of Races</strong></span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Group 1: Sheepdogs</strong></span></p>
+<p><span style="font-size: 12pt;">1. Sheepdogs (Shepherds and Cattle)</span></p>
+<p><span style="font-size: 12pt;">2. Safety (for the conservation and protection of livestock)</span></p>
+<p><span style="font-size: 12pt;">3 .Mandria (guidance of Livestock)</span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Group 2 working dogs</strong></span></p>
+<p><span style="font-size: 12pt;">1. Guard and Defense</span></p>
+<p><span style="font-size: 12pt;">2. Guide</span></p>
+<p><span style="font-size: 12pt;">3. Relief and Work</span></p>
+<p><span style="font-size: 12pt;">&nbsp;</span><br /><span style="font-size: 12pt;"><strong>Group 3 Terriers</strong></span></p>
+<p><span style="font-size: 12pt;">1. Search in Tana</span></p>
+<p><span style="font-size: 12pt;">2. Sports</span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Group 4 hunting dogs</strong></span></p>
+<p><span style="font-size: 12pt;">1. Greyhounds</span></p>
+<p><span style="font-size: 12pt;">2. Hunting</span></p>
+<p><span style="font-size: 12pt;">3. Blood Hounds and Ice</span></p>
+<p><span style="font-size: 12pt;">4. Punta</span></p>
+<p><span style="font-size: 12pt;">5. Retrievers</span></p>
+<p><span style="font-size: 12pt;">6. Water</span></p>
+<p><span style="font-size: 12pt;">7. Carry</span></p>
+<p><span style="font-size: 12pt;">8. Other</span></p>
+<p><br /><span style="font-size: 12pt;"><strong>Group 5 dogs Companion</strong></span></p>
+<p><span style="font-size: 12pt;">1. Company</span></p>
+<p><span style="font-size: 12pt;">2. Other</span></p>
