@@ -28,6 +28,7 @@ class Admin {
             @session_start();
             $res = mysqli_fetch_assoc($query);
             $_SESSION['admin_id'] = $res["adm_id"];
+            $_SESSION['admin_lang'] = $res["adm_lang"];
             return false;
         } else {
             return "Не верный лоин или пароль";
