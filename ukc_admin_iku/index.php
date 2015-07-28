@@ -436,6 +436,8 @@ if (isLoggedAdmin()) {
             $parametrs["page"] = "admins.php";
             break;
         case "add_admin":
+            $lang = new Language($_SESSION["lang"]);
+            $parametrs["language"] = $lang->getLanguage();
             $parametrs["page"] = "add_admin.php";
             break;
         case "main":
