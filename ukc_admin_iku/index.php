@@ -440,7 +440,8 @@ if (isLoggedAdmin()) {
             $parametrs["language"] = $lang->getLanguage();
             $parametrs["page"] = "add_admin.php";
             if(!empty($_POST)) {
-            $parametrs["error"] = Admin::AddAdmin($_POST['name'], $_POST['password'], $_POST['lang_id'],$mysqli);
+            $add = new Admin($_SESSION['admin_id'], $mysqli);
+            $parametrs["error"] = $add->AddAdmin($_POST['name'], $_POST['password'], $_POST['lang_id'],$mysqli);
             }
             break;
         case "main":
