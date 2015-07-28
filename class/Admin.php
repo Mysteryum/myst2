@@ -37,5 +37,16 @@ class Admin {
         $_SESSION['admin_id'] = "";
         session_destroy();
     }
-
+    static public function AddAdmin ($name,$pass,$langid,$mysqli){
+        if (empty ($name)|| empty ($pass) || $langid == 0){
+         $error = 'Заполните все поля!';
+        return $error;}
+        $pass = md5($pass);
+        $name = mysqli_real_escape_string($mysqli,$name);
+        $pass = mysqli_real_escape_string($mysqli,$pass);
+        $langid = mysqli_real_escape_string($mysqli,$langid);
+        $langid = (int)$langid;
+        mysqli_query($mysqli, "INSERT INTO `iku_admin`(`adm_log`,`adm_pass`,`adm_lang`) VALUES ('$name','$pass','$langid')");   
+        return false;
+    }
 }
