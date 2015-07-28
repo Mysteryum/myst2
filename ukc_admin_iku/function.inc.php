@@ -21,3 +21,14 @@ function debug($content) {
     print_r($content);
     echo "</pre>";
 }
+
+function addadmin ($name,$pass,$langname){
+    global $mysqli;
+    $pass = md5($pass);
+    $name = mysqli_real_escape_string($mysqli,$name);
+    $pass = mysqli_real_escape_string($mysqli,$pass);
+    $langname = mysqli_real_escape_string($mysqli,$langname);
+    mysqli_query($mysqli, "INSERT INTO `iku_admin`(`adm_log`,`adm_pass`,`adm_lang`) VALUES ('$name','$pass','$langname')");
+    
+    return false;
+}

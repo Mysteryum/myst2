@@ -439,6 +439,8 @@ if (isLoggedAdmin()) {
             $lang = new Language($_SESSION["lang"]);
             $parametrs["language"] = $lang->getLanguage();
             $parametrs["page"] = "add_admin.php";
+            if(!empty($_POST)) {
+            addadmin($_POST['name'], $_POST['password'], $_POST['lang_id']);}
             break;
         case "main":
         default :

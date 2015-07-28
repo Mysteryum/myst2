@@ -5,14 +5,14 @@
 <p>Password: </p>
 <input type="text" name="password"/>
 <br />
-</form>
 <br />
 Select language:
 <br />
-<form method="get" name="drop_down_box">
 <select name="lang_id" size="1">
 <?php foreach ($parametrs["language"] as $value) { ?>
-<option value=1><?= $value["name"] ?></option>
+<option value=<?= $value["name"] ?>><?= $value["name"] ?></option>
 <?php } ?>
 </select>
+<br />
+<input name="" type="submit" value="Отправить"/>
 </form>
