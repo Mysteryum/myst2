@@ -33,7 +33,7 @@
             </div>
         <?php } ?>
     </div>
-
+ <?php if ($value["id"] == 1){?>
     <div class="form-group">
         <label for="InputTitle">Страна</label>
         <select name="country" class="form-control">
@@ -47,6 +47,7 @@
         <label for="InputTitle">Фото</label>
         <input type="file" value="" name="photo" class="form-control">
     </div>
+        <?php } ?>
     <div style="text-align: right;">
         <button type="submit" class="btn btn-success">
             Сохранить

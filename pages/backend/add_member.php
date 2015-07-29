@@ -41,6 +41,7 @@
             </div>
         <?php } ?>
     </div><br>
+     <?php if ($value["id"] == 1){?>
     <div class="form-group">
         <label for="InputTitle">Флаг</label>
         <input type="file" name="flag" class="form-control">
@@ -58,6 +59,7 @@
         <label for="InputTitle">E-mail</label>
         <textarea rows="6" cols="30" name="mail" class="form-control check_editor" style="height: 100px;"><?= isset($parametrs["member"]["mail"])?$parametrs["member"]["mail"]:''  ?></textarea>
     </div>
+    <?php } ?>
     <div style="text-align: right;">
         <button type="submit" class="btn btn-success">
             Сохранить

@@ -25,6 +25,7 @@
             </div>
         <?php } ?>
     </div><br>
+    <?php if ($value["id"] == 1){?>
     <div class="form-group">
         <label for="InputTitle">Число</label>
         <input type="text" name="chislo" value="<?= isset($parametrs["circular"]["chislo"])?$parametrs["circular"]["chislo"]:'' ?>" class="form-control">
@@ -33,7 +34,7 @@
         <label for="InputTitle">Номер</label>
         <input type="text" name="numer" value="<?= isset($parametrs["circular"]["numer"])?$parametrs["circular"]["numer"]:'' ?>" class="form-control">
     </div>   
-
+<?php } ?>
     <div style="text-align: right;">
         <button type="submit" class="btn btn-success">
             Сохранить

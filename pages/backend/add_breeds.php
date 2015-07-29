@@ -47,6 +47,7 @@
             </div>
         <?php } ?>
     </div><br>
+    <?php if ($value["id"] == 1){?>
     <div class="form-group">
         <label for="InputTitle">Международное название</label>
         <input type="text" name="ang_name" value="<?= isset($parametrs["breed"]["ang_name"])?$parametrs["breed"]["ang_name"]:'' ?>" class="form-control">
@@ -65,6 +66,7 @@
         <label for="InputTitle">Код стандарта</label>
         <input type="text" name="kode" value="<?= isset($parametrs["breed"]["kode"])?$parametrs["breed"]["kode"]:'' ?>" class="form-control">
     </div>
+    <?php } ?>
     <div style="text-align: right;">
         <button type="submit" class="btn btn-success">
             Сохранить

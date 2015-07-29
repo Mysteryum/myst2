@@ -15,6 +15,8 @@ if (isLoggedAdmin()) {
     }
     $newlang = new Admin($_SESSION['admin_lang'], $mysqli);
     $langid = $_SESSION['admin_lang'];
+    if ($langid == 0)
+        $langid = 1;
     $lang = new Language($_SESSION["lang"]);
     $parametrs["language"] = $lang->getLanguage($langid);
     
@@ -435,12 +437,25 @@ if (isLoggedAdmin()) {
             header("Location: /ukc_admin_iku/");
             break;
         case "admins":
+            $add = new Admin($_SESSION['admin_id'], $mysqli);
+            if (isset($_GET["action"])) {
+                switch ($_GET["action"]) {
+                    case "del":
+                        $add->delAdmin($_GET["id"]);
+                        Header("Location: /ukc_admin_iku/admins/");
+                        break;
+                }
+            }
             $parametrs["page"] = "admins.php";
+            $parametrs["list"] = $add ->AdminList();
+            $lang = new Language($_SESSION["lang"]);
+            $parametrs["language"] = $lang->getLanguage();
             break;
         case "add_admin":
             $lang = new Language($_SESSION["lang"]);
             $parametrs["language"] = $lang->getLanguage();
             $parametrs["page"] = "add_admin.php";
+            
             if(!empty($_POST)) {
             $add = new Admin($_SESSION['admin_id'], $mysqli);
             $parametrs["error"] = $add->AddAdmin($_POST['name'], $_POST['password'], $_POST['lang_id'],$mysqli);

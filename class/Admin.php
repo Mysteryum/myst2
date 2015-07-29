@@ -50,4 +50,32 @@ class Admin {
         $query = $mysqli->query("INSERT INTO iku_admin(adm_log,adm_pass,adm_lang) VALUES ('$name','$pass','$langid')");   
         return false;
     }
+    public function AdminList ($id = null, $name = null) {
+        global $mysqli;
+        if ($id != null) {
+            $id = (int) $id;
+            $wh = "WHERE `adm_id`='$id'";
+        } elseif ($name != null) {
+            $name = mysqli_escape_string($name);
+            $wh = "WHERE `adm_log`='$name'";
+        } else {
+            $wh = "";
+        }
+        $result = $mysqli->query("SELECT * FROM `iku_admin` $wh");
+
+        $mas = array();
+        $i = 0;
+        while ($res = mysqli_fetch_assoc($result)) {
+            if ($name != null) {
+                return $res;
+            }
+            $mas[$res["adm_id"]] = $res;
+            $i++;
+        }
+        return $mas;
+    }
+    public function delAdmin($id) {
+        $pages = new Pages();
+        $pages->delRecord("iku_admin", $id);
+    }
 }

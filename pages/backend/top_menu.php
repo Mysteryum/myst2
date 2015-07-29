@@ -88,6 +88,9 @@ if (isLoggedAdmin()) {
                     <li> 
                         <a href="/ukc_admin_iku/labels/">Подписи</a>
                     </li>
+                    <li> 
+                        <a href="/ukc_admin_iku/admins/">Администраторы</a>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/" target="_blank">На сайт</a></li>

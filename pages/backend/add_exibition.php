@@ -33,6 +33,7 @@
             </div>
         <?php } ?>
     </div><br>
+   <?php if ($value["id"] == 1){?>
     <div class="form-group">
         <?=$parametrs["exebition"]['country']?><br>
         <label for="InputTitle">Страна</label>
@@ -62,6 +63,7 @@
         <label for="InputTitle">Сайт</label>
         <input type="text" name="syte" value="<?= isset($parametrs["exebition"]['syte'])?$parametrs["exebition"]['syte']:'' ?>" class="form-control">
     </div>
+      <?php } ?>
     <div style="text-align: right;">
         <button type="submit" class="btn btn-success">
             Сохранить

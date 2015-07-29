@@ -30,6 +30,7 @@
             </div>
         <?php } ?>
     </div><br>
+    <?php if ($value["id"] == 1){?>
     <div class="form-group">
         <label for="InputTitle">Страна</label>
         <select name="country_id" class="form-control">
@@ -48,6 +49,7 @@
         <input type="text" name="phone" value="<?= isset($parametrs["menedgment"]["phone"]) ? $parametrs["menedgment"]["phone"] : '' ?>" class="form-control">
     </div>
     <div style="text-align: right;">
+        <?php } ?>
         <button type="submit" class="btn btn-success">
             Сохранить
         </button>        
