@@ -13,9 +13,11 @@ if (isLoggedAdmin()) {
     if (!isset($_SESSION["lang"])) {
         $_SESSION["lang"] = 1;
     }
+    $newlang = new Admin($_SESSION['admin_lang'], $mysqli);
+    $langid = $_SESSION['admin_lang'];
     $lang = new Language($_SESSION["lang"]);
-    $parametrs["language"] = $lang->getLanguage();
-
+    $parametrs["language"] = $lang->getLanguage($langid);
+    
     switch ($_GET["page"]) {
         case "labels":
             if (!empty($_POST)) {
