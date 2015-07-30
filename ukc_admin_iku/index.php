@@ -438,6 +438,10 @@ if (isLoggedAdmin()) {
             break;
         case "admins":
             $add = new Admin($_SESSION['admin_id'], $mysqli);
+            $parametrs["page"] = "admins.php";
+            $parametrs["list"] = $add ->AdminList();
+            $lang = new Language($_SESSION["lang"]);
+            $parametrs["language"] = $lang->getLanguage();
             if (isset($_GET["action"])) {
                 switch ($_GET["action"]) {
                     case "del":
@@ -446,10 +450,6 @@ if (isLoggedAdmin()) {
                         break;
                 }
             }
-            $parametrs["page"] = "admins.php";
-            $parametrs["list"] = $add ->AdminList();
-            $lang = new Language($_SESSION["lang"]);
-            $parametrs["language"] = $lang->getLanguage();
             break;
         case "add_admin":
             $lang = new Language($_SESSION["lang"]);
