@@ -15,8 +15,6 @@ if (isLoggedAdmin()) {
     }
     $newlang = new Admin($_SESSION['admin_lang'], $mysqli);
     $langid = $_SESSION['admin_lang'];
-    if ($langid == 0)
-        $langid = 1;
     $lang = new Language($_SESSION["lang"]);
     $parametrs["language"] = $lang->getLanguage($langid);
     

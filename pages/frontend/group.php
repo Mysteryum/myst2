@@ -32,13 +32,15 @@ if (isset($_GET["group"]) && count($parametrs["breeds"])) {
                 <td><?= $value_desc["another_name"] ?></td>
                 <td><?= $value_desc["name"] ?></td>
                 <td class="document">
+                    <?php if ($value_desc["lang_id"]==$_SESSION["lang"]){?>
                     <a href="/document.php?breed=<?= $value["id"] ?>">
                         <img src="/images/doc_icon.png" alt="<?= $parametrs["lang"][$_SESSION["lang"]]["name"] ?>" height="50">
+                        <?php } ?>
                     </a>         
                 </td>
             </tr>
             <?php
-        }
+        } 
         ?>
     </table>
     <?php

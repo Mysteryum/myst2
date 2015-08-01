@@ -75,9 +75,10 @@
                         <td class="document">
                             <?php if ($breeds_desc["document"]) { ?>
                                 <a href="/userfiles/provision/<?= $breeds_desc["document"] ?>">
+                                    <?php if ($value["id"]==$breeds_desc["lang_id"]) { ?>
                                     <img src="/userfiles/lang_flag/<?= $parametrs["language"][$value["id"]]["flag"] ?>" alt="<?= $breeds_desc["document"] ?>">
                                 </a>    
-                            <?php } ?>
+                            <?php } }?>
                         </td>
                         <td>
                             <a href="/ukc_admin_iku/breeds/edit/<?= $breeds["id"] ?>">

@@ -199,7 +199,7 @@ class Language {
         $langs = $this->getLanguage();
         $mas = array();
         foreach ($langs as $key => $value) {
-            $file_handle = fopen($this->path_lang_default . $key . '/' . $key . ".txt", "r");
+            $file_handle = fopen($this->path_lang_default . $key . '/' . $key . '.txt', "r");
             $lang_mas = array();
             while (!feof($file_handle)) {
                 $line = fgets($file_handle);

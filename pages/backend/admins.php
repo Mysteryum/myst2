@@ -9,7 +9,7 @@
  foreach ($parametrs["list"] as $list) {               
  foreach ($parametrs["language"] as $value) { 
  if ($value["id"]==$list["adm_lang"]){?> 
- <tr>                   
+ <tr>
  <td><?= $list["adm_log"] ?></td>                       
  <td><?= $value["name"] ?></td>
  <td>
