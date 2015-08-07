@@ -35,7 +35,7 @@
     </div><br>
    <?php if ($value["id"] == 1){?>
     <div class="form-group">
-        <?=$parametrs["exebition"]['country']?><br>
+        <?=$parametrs["exebition"]["country"]?><br>
         <label for="InputTitle">Страна</label>
         <select name="country_id" class="form-control">
             <option value="0">Выбрать</option>

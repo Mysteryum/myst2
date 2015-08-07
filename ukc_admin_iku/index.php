@@ -446,6 +446,12 @@ if (isLoggedAdmin()) {
                         $add->delAdmin($_GET["id"]);
                         Header("Location: /ukc_admin_iku/admins/");
                         break;
+                    case "add":
+                        if (!empty($_POST)) {
+                            $parametrs["error"] = $add->AddAdmin($_POST['name'], $_POST['password'], $_POST['lang_id'],$mysqli);
+                        }
+                        $parametrs["page"] = "add_admin.php";
+                        break;
                 }
             }
             break;
@@ -454,11 +460,11 @@ if (isLoggedAdmin()) {
             $parametrs["language"] = $lang->getLanguage();
             $parametrs["page"] = "add_admin.php";
             
-            if(!empty($_POST)) {
+            /*if(!empty($_POST)) {
             $add = new Admin($_SESSION['admin_id'], $mysqli);
             $parametrs["error"] = $add->AddAdmin($_POST['name'], $_POST['password'], $_POST['lang_id'],$mysqli);
             }
-            break;
+            break;*/
         case "main":
         default :
             $parametrs["page"] = "main.php";
