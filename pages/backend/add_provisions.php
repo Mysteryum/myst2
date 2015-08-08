@@ -14,7 +14,7 @@
             ?>            
             <div id="tabs-<?= $value["id"] ?>">         
                 <div class="form-group">
-                    <label for="InputTitle">Название</label>
+                    <label for="InputTitle"><?= $lang->l("Название") ?></label>
                     <textarea name="name[<?= $value["id"] ?>]" class="form-control"><?= isset($parametrs["provision"][$value["id"]][0]["name"])?$parametrs["provision"][$value["id"]][0]["name"]:"" ?></textarea>
                 </div>
                 <div class="form-group">
@@ -28,7 +28,7 @@
 
     <div style="text-align: right;">
         <button type="submit" class="btn btn-success">
-            Сохранить
+            <?= $lang->l("Сохранить") ?>
         </button>        
     </div>
 </form>

@@ -1,8 +1,8 @@
 <div id="tabs">
 <table class="table">
 <tr class="top">
-<th>Имя</th>                   
-<th>Язык</th>                    
+<th><?=$lang->l("Логин")?></th>                   
+<th><?= $lang->l("Язык") ?></th>                    
  </tr> 
  
  <?php               
@@ -11,11 +11,11 @@
  if ($value["id"]==$list["adm_lang"]){?> 
  <tr>
  <td><?= $list["adm_log"] ?></td>                       
- <td><?= $value["name"] ?></td>
+ <td><img src="/userfiles/lang_flag/<?= $value["flag"] ?>"> <a><?= $value["name"] ?></a></td>
  <td>
 <a href="/ukc_admin_iku/admins/del/<?= $list["adm_id"] ?>">
 <button type="Удалить" class="btn btn-danger">
- Удалить
+ <?=$lang->l("Удалить")?>
 </button>
 </a>
  </td>

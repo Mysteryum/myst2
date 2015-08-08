@@ -11,10 +11,10 @@
                 <table class="table" cellpadding="0" cellspacing="0" style="width: 800px; margin: 0px auto;">
                     <tr>
                         <th>
-                            <a href="">Метка</a>
+                            <a href=""><?= $lang->l("Метка")?></a>
                         </th>
                         <th>
-                            <a href="">Перевод</a>
+                            <a href=""><?= $lang->l("Перевод")?></a>
                         </th>
                     </tr>
                     <?php foreach ($parametrs["translate"][$lang_id] as $key => $value2) { ?>
@@ -29,7 +29,7 @@
                     <?php } ?>
                     <tr>
                         <td colspan="2">
-                            <input type="submit" value="Сохранить">
+                            <input type="submit" value="<?= $lang->l("Сохранить")?>">
                         </td>
                     </tr>
                 </table>

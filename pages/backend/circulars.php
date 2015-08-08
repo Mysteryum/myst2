@@ -8,9 +8,9 @@
         <div id="tabs-<?= $value["id"] ?>">
             <table class="table">
                 <tr class="top">
-                    <th>число</th>
-                    <th>номер</th>
-                    <th>название</th>
+                    <th><?= $lang->l("число")?></th>
+                    <th><?= $lang->l("номер")?></th>
+                    <th><?= $lang->l("название")?></th>
                 </tr>
                 <?php
                 foreach ($parametrs["circulars"] as $circulars) {                    
@@ -27,14 +27,14 @@
                         <td>
                             <a href="/ukc_admin_iku/circulars/edit/<?= $circulars["id"] ?>">
                                 <button type="button" class="btn btn-default">
-                                    Изменить
+                                    <?= $lang->l("Изменить")?>
                                 </button>
                             </a>
                         </td>
                         <td>
                             <a href="/ukc_admin_iku/circulars/del/<?= $circulars["id"] ?>">
                                 <button type="button" class="btn btn-danger">
-                                    Удалить
+                                    <?= $lang->l("Удалить")?>
                                 </button>
                             </a>
                         </td>

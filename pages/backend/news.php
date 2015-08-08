@@ -8,8 +8,8 @@
         <div id="tabs-<?= $value["id"] ?>">
             <table class="table">
                 <tr class="top">
-                    <th>Дата</th>
-                    <th>Название</th>
+                    <th><?= $lang->l("Дата")?></th>
+                    <th><?= $lang->l("Название")?></th>
                 </tr>
                 <?php
                 foreach ($parametrs["news"] as $news) {
@@ -25,14 +25,14 @@
                         <td>
                             <a href="/ukc_admin_iku/news/edit/<?= $news["id"] ?>">
                                 <button type="Изменить" class="btn btn-default">
-                                    Изменить
+                                    <?= $lang->l("Изменить")?>
                                 </button>
                             </a>
                         </td>
                         <td>
                             <a href="/ukc_admin_iku/news/del/<?= $news["id"] ?>">
                                 <button type="Удалить" class="btn btn-danger">
-                                    Удалить
+                                    <?= $lang->l("Удалить")?>
                                 </button>
                             </a>
                         </td>

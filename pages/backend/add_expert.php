@@ -13,6 +13,7 @@
                 <li><a href="#tabs-<?= $value["id"] ?>"><?= $value["name"] ?></a></li>
             <?php } ?>
         </ul>
+        
         <?php
         foreach ($parametrs["language"] as $value) {
             if (isset($parametrs["expert"]["desc"][1]) && !isset($parametrs["expert"]["desc"][$value["id"]])) {
@@ -23,11 +24,11 @@
             ?>
             <div id="tabs-<?= $value["id"] ?>">         
                 <div class="form-group">
-                    <label for="InputTitle">Имя</label>
+                    <label for="InputTitle"><?= $lang->l("Имя")?></label>
                     <input type="text" value="<?= isset($expert_desc["name"]) ? $expert_desc["name"] : "" ?>" name="name[<?= $value["id"] ?>]" class="form-control">        
                 </div>
                 <div class="form-group">
-                    <label for="InputTitle">Группы</label>
+                    <label for="InputTitle"><?= $lang->l("Группы")?></label>
                     <input type="text" value="<?= isset($expert_desc["group"]) ? $expert_desc["group"] : "" ?>" name="group[<?= $value["id"] ?>]" class="form-control"> 
                 </div>        
             </div>
@@ -35,16 +36,16 @@
     </div>
  <?php if ($value["id"] == 1){?>
     <div class="form-group">
-        <label for="InputTitle">Страна</label>
+        <label for="InputTitle"><?= $lang->l("Страна")?></label>
         <select name="country" class="form-control">
-            <option value="0">Выбрать</option>
+            <option value="0"><?= $lang->l("Выбрать")?></option>
             <?php foreach ($parametrs["country"] as $value) { ?>
                 <option value="<?= $value["id_country"] ?>" <?= (isset($parametrs["expert"]["country"]) && ($parametrs["expert"]["country"] == $value["id_country"])) ? "selected" : "" ?>><?= $value["name_country"] ?></option>
             <?php } ?>
         </select>
     </div>
     <div class="form-group">        
-        <label for="InputTitle">Фото</label>
+        <label for="InputTitle"><?= $lang->l("Фото")?></label>
         <input type="file" value="" name="photo" class="form-control">
     </div>
         <?php } ?>

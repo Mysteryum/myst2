@@ -9,13 +9,14 @@ if (isLoggedAdmin()) {
         $_GET["page"] = "static_text";
         $_GET["action"] = "main";
     }
-    $pages = new Pages($mysqli);
-    if (!isset($_SESSION["lang"])) {
-        $_SESSION["lang"] = 1;
-    }
+    
     $newlang = new Admin($_SESSION['admin_lang'], $mysqli);
     $langid = $_SESSION['admin_lang'];
-    $lang = new Language($_SESSION["lang"]);
+    $pages = new Pages($mysqli);
+    if (!isset($_SESSION["lang"])) {
+        $_SESSION["lang"] = $langid;
+    }  
+    $lang = new Language($langid);
     $parametrs["language"] = $lang->getLanguage($langid);
     
     switch ($_GET["page"]) {

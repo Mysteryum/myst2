@@ -8,11 +8,11 @@
         <div id="tabs-<?= $value["id"] ?>">
             <table class="table">
                 <tr class="top">
-                    <th>Должность</th>
-                    <th>Имя</th>
-                    <th>Страна</th>
-                    <th>Адрес</th>
-                    <th>Телефон</th>
+                    <th><?= $lang->l("Должность")?></th>
+                    <th><?= $lang->l("Имя")?></th>
+                    <th><?= $lang->l("Страна")?></th>
+                    <th><?= $lang->l("Адрес")?></th>
+                    <th><?= $lang->l("Телефон")?></th>
                     <th>E-mail</th>
                 </tr>
                 <?php
@@ -33,14 +33,14 @@
                         <td>
                             <a href="/ukc_admin_iku/menedgment/edit/<?= $manadgment["id"] ?>">
                                 <button type="Изменить" class="btn btn-default">
-                                    Изменить
+                                    <?= $lang->l("Изменить")?>
                                 </button>
                             </a>
                         </td>
                         <td>
                             <a href="/ukc_admin_iku/menedgment/del/<?= $manadgment["id"] ?>">
                                 <button type="Удалить" class="btn btn-danger">
-                                    Удалить
+                                    <?= $lang->l("Удалить")?>
                                 </button>
                             </a>
                         </td>

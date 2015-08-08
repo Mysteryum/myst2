@@ -1,11 +1,11 @@
 <form method="post" ENCTYPE="multipart/form-data" role="form">
     <div class="form-group">
-        <label for="InputTitle">Добавить фото</label>
+        <label for="InputTitle"><?= $lang->l("Добавить фото")?></label>
         <input type="file" name="galery" class="form-control">
     </div>                 
     <div style="text-align: right;">
         <button type="submit" class="btn btn-success" name="submit">
-            Сохранить
+            <?= $lang->l("Сохранить")?>
         </button>        
     </div>
 </form>

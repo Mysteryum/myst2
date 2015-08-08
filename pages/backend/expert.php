@@ -15,10 +15,10 @@
         <div id="tabs-<?= $value["id"] ?>">
             <table class="table">
                 <tr class="top">
-                    <th>Фото</th>
-                    <th>Имя</th>
-                    <th>Страна</th>
-                    <th>Группа</th>
+                    <th><?= $lang->l("Фото")?></th>
+                    <th><?= $lang->l("Имя")?></th>
+                    <th><?= $lang->l("Страна")?></th>
+                    <th><?= $lang->l("Группа")?></th>
                     <th></th>
                 </tr>
                 <?php
@@ -39,14 +39,14 @@
                         <td>
                             <a href="/ukc_admin_iku/expert/edit/<?= $expert["id"] ?>">
                                 <button type="Изменить" class="btn btn-default">
-                                    Изменить
+                                    <?= $lang->l("Изменить")?>
                                 </button>
                             </a>
                         </td>
                         <td>
                             <a href="/ukc_admin_iku/expert/del/<?= $expert["id"] ?>">
                                 <button type="Удалить" class="btn btn-danger">
-                                    Удалить
+                                    <?= $lang->l("Удалить")?>
                                 </button>
                             </a>
                         </td>

@@ -9,7 +9,7 @@ function _autoload($className) {
 
 function isLoggedAdmin() {
     @session_start();
-    if (isset($_SESSION['admin_id'])) {
+    if (isset($_SESSION['admin_id'])&&isset($_SESSION['admin_lang'])) {
         return true;
     } else {
         return false;

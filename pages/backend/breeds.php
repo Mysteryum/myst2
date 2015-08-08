@@ -3,24 +3,24 @@
         <table class="table" style="width: 900px; margin: 0px auto;">
             <tr>
                 <td>
-                    Поиск по группе:
+                    <?= $lang->l("Поиск по группе:") ?>
                 </td>
                 <td style="width: 250px;">
                     <select class="form-control" name="group">
-                        <option value="0">Выбрать</option>
-                        <option value="1" <?=(isset($_GET["group"])&&($_GET["group"]==1))?"selected":""?>>I Группа</option>
-                        <option value="2" <?=(isset($_GET["group"])&&($_GET["group"]==2))?"selected":""?>>II Группа</option>
-                        <option value="3" <?=(isset($_GET["group"])&&($_GET["group"]==3))?"selected":""?>>III Группа</option>
-                        <option value="4" <?=(isset($_GET["group"])&&($_GET["group"]==4))?"selected":""?>>IV Группа</option>
-                        <option value="5" <?=(isset($_GET["group"])&&($_GET["group"]==5))?"selected":""?>>V Группа</option>
+                        <option value="0"><?= $lang->l("Выбрать") ?></option>
+                        <option value="1" <?=(isset($_GET["group"])&&($_GET["group"]==1))?"selected":""?>><?= $lang->l("I Группа")?></option>
+                        <option value="2" <?=(isset($_GET["group"])&&($_GET["group"]==2))?"selected":""?>><?= $lang->l("II Группа")?></option>
+                        <option value="3" <?=(isset($_GET["group"])&&($_GET["group"]==3))?"selected":""?>><?= $lang->l("III Группа")?></option>
+                        <option value="4" <?=(isset($_GET["group"])&&($_GET["group"]==4))?"selected":""?>><?= $lang->l("IV Группа")?></option>
+                        <option value="5" <?=(isset($_GET["group"])&&($_GET["group"]==5))?"selected":""?>><?= $lang->l("V Группа")?></option>
                     </select>
                 </td>
                 <td>
-                    Поиск по символу:
+                    <?= $lang->l("Поиск по символу:")?>
                 </td>
                 <td style="width: 250px;">
                     <select class="form-control" name="symbol">
-                        <option value="0">Выбрать</option>
+                        <option value="0"><?= $lang->l("Выбрать")?></option>
                         <?php
                         for ($i = 0; $i < count($rus_literal); $i++) {
                             echo "<option value='{$rus_literal[$i]}' ".((isset($_GET["symbol"])&&($_GET["symbol"]==$rus_literal[$i]))?"selected":"").">{$rus_literal[$i]}</option>";
@@ -30,10 +30,10 @@
                 </td>
 
                 <td>
-                    <button type="submit" class="btn btn-primary">Искать</button>
+                    <button type="submit" class="btn btn-primary"><?= $lang->l("Искать")?></button>
                 </td>
                 <td>
-                    <button type="button" class="btn btn-success">Все породы</button>
+                    <button type="button" class="btn btn-success"><?= $lang->l("Все породы")?></button>
                 </td>
             </tr>
         </table>
@@ -47,14 +47,14 @@
         <div id="tabs-<?= $value["id"] ?>">
             <table class="table">
                 <tr class="top">
-                    <th>Символ</th>
-                    <th>Группа</th>        
-                    <th>Код стандарт</th>
-                    <th>Русское название</th>
-                    <th>Международное название</th>
-                    <th>Другие</th>
-                    <th>Статус</th>
-                    <th style="width: 200px;">Документы</th>
+                    <th><?= $lang->l("Символ")?></th>
+                    <th><?= $lang->l("Группа")?></th>        
+                    <th><?= $lang->l("Код стандарта")?></th>
+                    <th><?= $lang->l("Русское название")?></th>
+                    <th><?= $lang->l("Международное название")?></th>
+                    <th><?= $lang->l("Другие")?></th>
+                    <th><?= $lang->l("Статус")?></th>
+                    <th style="width: 200px;"><?= $lang->l("Документы")?></th>
                 </tr>
                 <?php
                 foreach ($parametrs["breeds"] as $breeds) {
@@ -83,14 +83,14 @@
                         <td>
                             <a href="/ukc_admin_iku/breeds/edit/<?= $breeds["id"] ?>">
                                 <button type="Изменить" class="btn btn-default">
-                                    Изменить
+                                    <?= $lang->l("Изменить")?>
                                 </button>
                             </a>
                         </td>
                         <td>
                             <a href="/ukc_admin_iku/breeds/del/<?= $breeds["id"] ?>">
                                 <button type="Удалить" class="btn btn-danger">
-                                    Удалить
+                                    <?= $lang->l("Удалить")?>
                                 </button>
                             </a>
                         </td>

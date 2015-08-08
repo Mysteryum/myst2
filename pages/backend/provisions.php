@@ -8,8 +8,8 @@
         <div id="tabs-<?= $value["id"] ?>">
             <table class="table">
                 <tr class="top">
-                    <th>Название</th>
-                    <th>Документы</th>
+                    <th><?= $lang->l("Название")?></th>
+                    <th><?= $lang->l("Документы")?></th>
                     <th></th>
                 </tr>
                 <?php
@@ -30,14 +30,14 @@
                         <td>
                             <a href="/ukc_admin_iku/provisions/edit/<?= $provision["provision_id"] ?>">
                                 <button type="button" class="btn btn-default">
-                                    Изменить
+                                    <?= $lang->l("Изменить")?>
                                 </button>
                             </a>
                         </td>
                         <td>
                             <a href="/ukc_admin_iku/provisions/del/<?= $provision["provision_id"] ?>">
                                 <button type="button" class="btn btn-danger">
-                                    Удалить
+                                    <?= $lang->l("Удалить")?>
                                 </button>
                             </a>
                         </td>

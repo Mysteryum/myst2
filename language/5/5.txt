@@ -67,3 +67,38 @@ V группа%*%V group
 Члены и Партнеры%*%Members and Partners
 Члены%*%Members
 World Kennel Union%*%World Kennel Union
+Члены ИКУ%*%Members WKU
+Языки%*%Languages
+Подписи%*%Labels
+Администраторы%*%Admins
+На сайт%*%On Site
+Выход%*%Exit
+Сохранить%*%Save
+Метка%*%Label
+Перевод%*%Translate
+Логин%*%Login
+Язык%*%Language
+Удалить%*%Delete
+Код%*%Code
+Добавить%*%Add
+Изменить%*%Edit
+Логин:%*%Login:
+Пароль:%*%Password:
+Выбрать язык%*%Select language:
+Выбрать%*%Select
+Отправить%*%Submit
+Поиск по группе:%*%Search by group:
+I Группа%*%I group
+II Группа%*%II group
+III Группа%*%III group
+IV Группа%*%IV group
+V Группа%*%V group
+Поиск по символу:%*%Search by symbol:
+Искать%*%Search
+Все породы%*%All breeds
+Символ%*%Symbol
+Группа%*%Group
+Код стандарта%*%Code standard
+Партнер%*%Partner
+Фото%*%Photo
+Добавить регистрацию%*%Add registration

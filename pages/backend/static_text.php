@@ -18,7 +18,7 @@
 
     <div style="text-align: right;">
         <button type="submit" class="btn btn-success">
-            Сохранить
+            <?= $lang->l("Сохранить")?>
         </button>        
     </div>
 </form>

@@ -5,4 +5,4 @@
  * and open the template in the editor.
  */
 ?>
-главная страница
+<?= $lang->l("Главная страница")?>

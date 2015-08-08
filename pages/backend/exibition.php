@@ -8,13 +8,13 @@
         <div id="tabs-<?= $value["id"] ?>">
             <table class="table">
                 <tr class="top">
-                    <th>Дата</th>
-                    <th>Страна</th>
-                    <th>Место проведения</th>
-                    <th>Название</th>
-                    <th>Статус</th>
-                    <th>Название клуба</th>
-                    <th>Контакты</th>
+                    <th><?= $lang->l("Дата")?></th>
+                    <th><?= $lang->l("Страна")?></th>
+                    <th><?= $lang->l("Место проведения")?></th>
+                    <th><?= $lang->l("Название")?></th>
+                    <th><?= $lang->l("Статус")?></th>
+                    <th><?= $lang->l("Название клуба")?></th>
+                    <th><?= $lang->l("Контакты")?></th>
                 </tr>
                 <?php
                 foreach ($parametrs["exebition"] as $exebition) {
@@ -39,14 +39,14 @@
                         <td>
                             <a href="/ukc_admin_iku/exibition/edit/<?= $exebition["id"] ?>">
                                 <button type="Изменить" class="btn btn-default">
-                                    Изменить
+                                    <?= $lang->l("Изменить")?>
                                 </button>
                             </a>
                         </td>
                         <td>
                             <a href="/ukc_admin_iku/exibition/del/<?= $exebition["id"] ?>">
                                 <button type="Удалить" class="btn btn-danger">
-                                    Удалить
+                                    <?= $lang->l("Удалить")?>
                                 </button>
                             </a>
                         </td>

@@ -1,7 +1,6 @@
 <?php
 if (isLoggedAdmin()) {
     ?>
-<?php $parametrs["lang"] = $lang->getLanguage();?>
     <div class="header" style="height: auto;">
         <nav class="navbar navbar-default" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -15,7 +14,7 @@ if (isLoggedAdmin()) {
                 <ul class="nav navbar-nav" id="navbar-nav">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle <?= ($_GET["page"] == "main") ? 'active' : '' ?>" data-toggle="dropdown">
-                            <?= $lang->l("Главная") ?><b class="caret"></b>
+                            <?= $lang->l("Главная")?><b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
                             <li>
@@ -103,7 +102,7 @@ if (isLoggedAdmin()) {
     <?php if (!isset($_GET["action"])) { ?>
         <ul>
             <li style="float: none; margin: 0 auto; width: 70px; list-style: none;">
-                <a href="/ukc_admin_iku/<?= $_GET["page"] ?>/add"><input type="button" value="Добавить" class="btn btn-success"></a>
+                <a href="/ukc_admin_iku/<?= $_GET["page"] ?>/add"><input type="button" value="<?= $lang->l("Добавить")?>" class="btn btn-success"></a>
             </li>
         </ul>
     <?php } ?>

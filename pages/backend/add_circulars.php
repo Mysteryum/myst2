@@ -5,6 +5,7 @@
                 <li><a href="#tabs-<?= $value["id"] ?>"><?= $value["name"] ?></a></li>
             <?php } ?>
         </ul>
+        
         <?php
         foreach ($parametrs["language"] as $value) {
             if (isset($parametrs["circular"]["desc"][1]) && !isset($parametrs["circular"]["desc"][$value["id"]])) {
@@ -15,11 +16,11 @@
             ?>
             <div id="tabs-<?= $value["id"] ?>">
                 <div class="form-group">
-                    <label for="InputTitle">Название</label>
+                    <label for="InputTitle"><?= $lang->l("Название")?></label>
                     <input type="text" name="name[<?= $value["id"] ?>]" value="<?= isset($circular_desc["name"])?$circular_desc["name"]:'' ?>" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="InputTitle">Описание</label>
+                    <label for="InputTitle"><?= $lang->l("Описание")?></label>
                     <textarea class="check_editor" name="content[<?= $value["id"] ?>]" style="height: 300px;"><?= isset($circular_desc["content"])?$circular_desc["content"]:'' ?></textarea>
                 </div>      
             </div>
@@ -27,17 +28,17 @@
     </div><br>
     <?php if ($value["id"] == 1){?>
     <div class="form-group">
-        <label for="InputTitle">Число</label>
+        <label for="InputTitle"><?= $lang->l("Число")?></label>
         <input type="text" name="chislo" value="<?= isset($parametrs["circular"]["chislo"])?$parametrs["circular"]["chislo"]:'' ?>" class="form-control">
     </div>
     <div class="form-group">
-        <label for="InputTitle">Номер</label>
+        <label for="InputTitle"><?= $lang->l("Номер")?></label>
         <input type="text" name="numer" value="<?= isset($parametrs["circular"]["numer"])?$parametrs["circular"]["numer"]:'' ?>" class="form-control">
     </div>   
 <?php } ?>
     <div style="text-align: right;">
         <button type="submit" class="btn btn-success">
-            Сохранить
+            <?= $lang->l("Сохранить")?>
         </button>        
     </div>
 </form>

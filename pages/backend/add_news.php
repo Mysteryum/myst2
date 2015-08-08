@@ -15,11 +15,11 @@
             ?>
             <div id="tabs-<?= $value["id"] ?>">
                 <div class="form-group">
-                    <label for="InputTitle">Название</label>
+                    <label for="InputTitle"><?= $lang->l("Название") ?></label>
                     <input type="text" name="name[<?= $value["id"] ?>]" value="<?= isset($news_desc["name"])?$news_desc["name"]:'' ?>" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="InputTitle">Полное описание</label>
+                    <label for="InputTitle"><?= $lang->l("Полное описание") ?></label>
                     <textarea style="height: 300px;" name="content[<?= $value["id"] ?>]" class="check_editor" class="form-control"><?= isset($news_desc["content"])?$news_desc["content"]:'' ?></textarea>
                 </div>                 
             </div>
@@ -27,7 +27,7 @@
     </div><br>
     <div style="text-align: right;">
         <button type="submit" class="btn btn-success">
-            Сохранить
+            <?= $lang->l("Сохранить") ?>
         </button>        
     </div>
 </form>
