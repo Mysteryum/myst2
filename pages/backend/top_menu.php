@@ -6,7 +6,7 @@ if (isLoggedAdmin()) {
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <a class="navbar-brand" href="/">
-                    International Kennel Union
+                    WKU
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
