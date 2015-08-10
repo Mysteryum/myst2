@@ -13,10 +13,21 @@ if (isLoggedAdmin()) {
     $newlang = new Admin($_SESSION['admin_lang'], $mysqli);
     $langid = $_SESSION['admin_lang'];
     $pages = new Pages($mysqli);
+    
     if (!isset($_SESSION["lang"])) {
-        $_SESSION["lang"] = $langid;
+        $_SESSION["lang"] = 1;
+        if ($langid ==1){
+        $_SESSION["lang"] = $langid;}
+    else {
+        $lang = new Language($_SESSION["lang"]);
+        $langs = $lang ->getLanguage(null, "en");
+        if (isset($langs["id"])) {
+        $_SESSION["lang"] = $langs["id"];
+        $lang = new Language($_SESSION["lang"]);
+    }       
+    }
     }  
-    $lang = new Language($langid);
+    $lang = new Language($_SESSION["lang"]);
     $parametrs["language"] = $lang->getLanguage($langid);
     
     switch ($_GET["page"]) {
@@ -49,7 +60,7 @@ if (isLoggedAdmin()) {
                         }
                         $parametrs["expert"] = $pages->getExpert($_GET["id"]);
                         $parametrs["expert"] = $parametrs["expert"][0];
-                        $parametrs["label"] = "Сохранить";
+                        $parametrs["label"] = $lang->l("Сохранить");
                         $parametrs["page"] = "add_expert.php";
                         break;
                     case "del":
@@ -73,7 +84,7 @@ if (isLoggedAdmin()) {
                             $pages->addComission();
                             Header("location: /ukc_admin_iku/comission/");
                         }
-                        $parametrs["label"] = "Добавить";
+                        $parametrs["label"] = $lang->l("Добавить");
                         $parametrs["page"] = "add_comission.php";
                         break;
                     case "edit":
@@ -83,7 +94,7 @@ if (isLoggedAdmin()) {
                         }
                         $parametrs["comission"] = $pages->getComission($_GET["id"]);
                         $parametrs["comission"] = $parametrs["comission"][0];
-                        $parametrs["label"] = "Сохранить";
+                        $parametrs["label"] = $lang->l("Сохранить");
                         $parametrs["page"] = "add_comission.php";
                         break;
                     case "del" :
@@ -105,7 +116,7 @@ if (isLoggedAdmin()) {
                             Header("Location: /ukc_admin_iku/provisions/");
                         }
                         $parametrs["page"] = "add_provisions.php";
-                        $parametrs["label"] = "Добавить";
+                        $parametrs["label"] = $lang->l("Добавить");
                         break;
                     case "edit":
                         if (!empty($_POST)) {
@@ -114,7 +125,7 @@ if (isLoggedAdmin()) {
                         }
                         $parametrs["provision"] = $pages->getProvision($_GET["id"]);
                         $parametrs["page"] = "add_provisions.php";
-                        $parametrs["label"] = "Сохранить";
+                        $parametrs["label"] = $lang->l("Сохранить");
                         break;
                     case "del":
                         $pages->delProvision($_GET["id"], "iku_provisions", Pages::DOCUMENT_PROVISION);
@@ -138,7 +149,7 @@ if (isLoggedAdmin()) {
                             $pages->addMenedgment($_POST["post"], $_POST["name"], $_POST["country"], $_POST["adrres"], $_POST["mail"], $_POST["phone"]);
                             header("Location: /ukc_admin_iku/menedgment/");
                         }
-                        $parametrs["label"] = "Добавить";
+                        $parametrs["label"] = $lang->l("Добавить");
                         $parametrs["page"] = "add_menedgment.php";
                         break;
                     case "edit":
@@ -234,7 +245,7 @@ if (isLoggedAdmin()) {
                             $pages->addCirculars();
                             header("Location: /ukc_admin_iku/circulars/");
                         }
-                        $parametrs["label"] = "Добавить";
+                        $parametrs["label"] = $lang->l("Добавить");
                         $parametrs["page"] = "add_circulars.php";
                         break;
                     case "edit":
@@ -244,7 +255,7 @@ if (isLoggedAdmin()) {
                         }
                         $parametrs["circular"] = $pages->getCirculars($_GET["id"]);
                         $parametrs["circular"] = $parametrs["circular"][0];
-                        $parametrs["label"] = "Сохранить";
+                        $parametrs["label"] = $lang->l("Сохранить");
                         $parametrs["page"] = "add_circulars.php";
                         break;
                     case "del":
@@ -279,7 +290,7 @@ if (isLoggedAdmin()) {
                             $pages->addMembers();
                             Header("Location: /ukc_admin_iku/members/");
                         }
-                        $parametrs["label"] = "Добавить";
+                        $parametrs["label"] = $lang->l("Добавить");
                         $parametrs["page"] = "add_member.php";
                         break;
                     case "edit":
@@ -290,7 +301,7 @@ if (isLoggedAdmin()) {
                         $parametrs["member"] = $pages->getMember($_GET["id"]);
                         $parametrs["member"] = $parametrs["member"][0];
 
-                        $parametrs["label"] = "Сохранить";
+                        $parametrs["label"] = $lang->l("Сохранить");
                         $parametrs["page"] = "add_member.php";
                         break;
                     case "del":
@@ -323,7 +334,7 @@ if (isLoggedAdmin()) {
                             $pages->addExebition();
                             header("Location: /ukc_admin_iku/exibition/");
                         }
-                        $parametrs["label"] = "Добавить";
+                        $parametrs["label"] = $lang->l("Добавить");
                         $parametrs["page"] = "add_exibition.php";
                         break;
                     case "edit":
@@ -333,7 +344,7 @@ if (isLoggedAdmin()) {
                         }
                         $parametrs["exebition"] = $pages->getExebition($_GET["id"]);
                         $parametrs["exebition"] = $parametrs["exebition"][0];
-                        $parametrs["label"] = "Сохранить";
+                        $parametrs["label"] = $lang->l("Сохранить");
                         $parametrs["page"] = "add_exibition.php";
                         break;
                     case "del":
@@ -408,7 +419,7 @@ if (isLoggedAdmin()) {
                             $pages->addNews();
                             header("Location: /ukc_admin_iku/news/");
                         }
-                        $parametrs["label"] = "Добавить";
+                        $parametrs["label"] = $lang->l("Добавить");
                         $parametrs["page"] = "add_news.php";
                         break;
                     case "edit":
@@ -418,7 +429,7 @@ if (isLoggedAdmin()) {
                         }
                         $parametrs["news"] = $pages->getNews($_GET["id"]);
                         $parametrs["news"] = $parametrs["news"][0];
-                        $parametrs["label"] = "Сохранить";
+                        $parametrs["label"] = $lang->l("Сохранить");
                         $parametrs["page"] = "add_news.php";
                         break;
                     case "del":
