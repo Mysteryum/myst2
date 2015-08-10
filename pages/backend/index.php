@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,10 +17,18 @@
         <script src="/script/tinymce/tinymce.js"></script>
         <script type="text/javascript" src="/script/jquery.lightbox-0.5.js"></script>
         <script type="text/javascript" src="/script/bootstrap.js"></script>
-        <script type="text/javascript" src="/script/admin.js">
-        tinymce.init({		
-		
-        language : 'ru',        
+        <script type="text/javascript" src="/script/admin.js"></script>
+<?php
+if (isset($_SESSION["lang"])) {
+if($_SESSION['lang']==1) {
+$js_lang = "ru";
+} else {
+$js_lang = "en";
+} }
+?>
+        <script type="text/javascript">
+            tinymce.init({
+        language : '<?=$js_lang?>',
         selector: ".check_editor",
         theme: "modern",
 		convert_urls: false,
@@ -39,7 +48,8 @@
 		filemanager_title:"Responsive Filemanager" ,
 		external_plugins: { "filemanager" : "/script/filemanager/plugin.js"}
 
-    });</script>
+    });
+</script>
     </head>
     <body>
         <?php include 'top_menu.php'; ?>

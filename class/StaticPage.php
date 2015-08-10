@@ -10,34 +10,35 @@ class StaticPage {
     const PAGE_PATENT = 6;
 
     public function getStaticPage($content) {
+        $lang = new Language($_SESSION["lang"]);
         switch ($content) {
             case "main":
                 $pg = self::PAGE_MAIN;
-                $label = "Главная страница";
+                $label = $lang->l("Главная страница");
                 break;
             case "ustav":
                 $pg = self::PAGE_USTAV;
-                $label = "Устав";
+                $label = $lang->l("Устав");
                 break;
             case "klasification":
                 $pg = self::PAGE_KLASIFICATION;
-                $label = "Классификация";
+                $label = $lang->l("Классификация");
                 break;
             case "group":
                 $pg = self::PAGE_GROUP;
-                $label = "Группы";
+                $label = $lang->l("Группы");
                 break;
             case "circular":
                 $pg = self::PAGE_CIRCULAR;
-                $label = "Циркуляры";
+                $label = $lang->l("Циркуляры");
                 break;
             case "patent":
                 $pg = self::PAGE_PATENT;
-                $label = "Патент лого";
+                $label = $lang->l("Патент лого");
                 break;
             case "contacts":
                 $pg = 0;
-                $label = "Контакты";
+                $label = $lang->l("Контакты");
                 break;
         }
         $pg = (int) $pg;
